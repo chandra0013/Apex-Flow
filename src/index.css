@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-apex-blue: #3B82F6;
+  --color-apex-teal: #14B8A6;
+  --color-apex-red: #EF4444;
+  --color-apex-amber: #F59E0B;
+  --color-apex-green: #10B981;
+  
+  /* New SaaS Palette */
+  --color-apex-forest: #1B4332;
+  --color-apex-mint: #B7E4C7;
+  --color-apex-mint-light: #D8F3DC;
+  --color-apex-bg: #F8F9FA;
+  --color-apex-card: #FFFFFF;
+  --color-apex-text: #1B4332;
+  --color-apex-text-muted: #52796F;
+  
+  /* Keep old dark bg for landing top if needed, but user wants light theme overall */
+  --color-apex-dark: #0B0F14;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-black/5 shadow-xl;
+  }
+  
+  .glass-hover {
+    @apply hover:bg-white/90 hover:border-black/10 transition-all duration-300;
+  }
+
+  .card-shadow {
+    box-shadow: 0 10px 30px -5px rgba(27, 67, 50, 0.05), 0 4px 12px -2px rgba(27, 67, 50, 0.03);
+  }
+
+  .bg-stripes {
+    background-image: linear-gradient(45deg, rgba(27, 67, 50, 0.05) 25%, transparent 25%, transparent 50%, rgba(27, 67, 50, 0.05) 50%, rgba(27, 67, 50, 0.05) 75%, transparent 75%, transparent);
+    background-size: 12px 12px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  @apply bg-apex-bg text-apex-text font-sans antialiased selection:bg-apex-forest/10;
+}
+
+h1, h2, h3, h4, .font-display {
+  @apply font-display;
+}
+
+.font-mono {
+  @apply font-mono;
+}
