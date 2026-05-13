@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Apex-Flow
 
-# Run and deploy your AI Studio app
+Real-time supply chain intelligence platform with predictive analytics, REST APIs, and a TypeScript frontend.
 
-This contains everything you need to run your app locally.
+## Overview
 
-View your app in AI Studio: https://ai.studio/apps/93d12a63-668b-4d81-99d6-e7b6d136926a
+Apex-Flow is an enterprise supply chain analytics project focused on operational visibility, forecast-driven decision support, and dashboard-based monitoring. Public documentation should describe the technical capability without naming private clients or confidential engagements.
 
-## Run Locally
+## Capabilities
 
-**Prerequisites:**  Node.js
+- Predictive analytics dashboard for supply chain workflows
+- REST API integration for operational data
+- TypeScript frontend experience
+- Cloud-native deployment-ready structure
+- Metrics-focused views for planning and monitoring
 
+## Tech stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- TypeScript
+- REST APIs
+- Dashboard UI
+- Predictive analytics
+- Cloud deployment patterns
+
+## Privacy note
+
+Do not include client names, internal datasets, private screenshots, or engagement-specific details in public documentation.
+
+## GitHub description
+
+```text
+Real-time supply chain intelligence platform with predictive analytics, REST APIs, TypeScript, and cloud-native deployment
+```
